@@ -131,5 +131,15 @@ GitHub: https://github.com/Anaya3104-pk
 Power BI | SQL | Data Analytics  
 
 ---
+## 📊 Dashboard Preview
+
+### 1. Loan Overview
+![Loan Overview](screenshots/loan-overview.png)
+
+### 2. Customer Insights
+![Customer Insights](screenshots/customer-insights.png)
+
+### 3. Risk Analysis
+![Risk Analysis](screenshots/risk-analysis.png)
 
 ## ⭐ If you found this useful, give the repository a star!

@@ -1,145 +1,166 @@
-# Financial Loan Analysis – Power BI Dashboard
+# 📊 Financial Loan Analysis – Power BI Dashboard
 
-This repository contains an interactive **Power BI Dashboard** designed to analyze financial loan performance, customer behavior, and portfolio risk.  
-The `.pbix` file delivers insights across loan applications, customer demographics, repayment status, and geographic risk distribution.
+An interactive Power BI dashboard designed to analyze **loan performance, customer characteristics, and portfolio risk** using financial loan data.
 
----
+## 📌 Project Overview
 
-## 📊 Dashboard Overview
+This project analyzes loan applications from multiple perspectives, including:
 
-The report consists of **5 interactive pages**, each focusing on a different aspect of loan analytics:
+- Loan application and funding performance
+- Customer demographics and financial characteristics
+- Loan grades and interest rates
+- Loan repayment status
+- Default and charged-off rates
+- Debt-to-income (DTI) ratios
+- Geographic loan risk
+- Employment and home ownership patterns
 
-### **1. Loan Overview**
-- Total Loan Applications: **39K**
-- Total Amount Received: **$473.1M**
-- Total Funded Amount: **$435.8M**
-- Average Interest Rate: **12.05%**
-- Average DTI: **13.33%**
-- Loan Status by Grade (A–G)
-- Average Interest Rate by Grade
-- Detailed loan-level table (ID, Grade, Status, DTI, Interest Rate, Amount)
+The dashboard is organized into three main analytical sections:
 
----
-
-### **2. Customer Insights**
-- Total Customers: **39K**
-- Average Annual Income: **$69.645K**
-- Active Customers: **32K**
-- Home Ownership Breakdown (Rent, Mortgage, Own)
-- Income Distribution Histogram
-- Employment Length vs Average Loan Amount
-- Geographic Loan Amount by State (Map Visualization)
+**Loan Overview → Customer Insights → Risk Analysis**
 
 ---
 
-### **3. Risk Analysis**
-- Total Charged-Off Loans: **5K**
-- Average DTI (Risk Category): **13.3%**
-- Average Interest Rate by Grade
-- Charged-Off Rate: **13.8%**
-- High-Risk Grade Count: **4K**
-- Default Rate by Loan Grade
-- Overall Loan Risk Composition (Current, Fully Paid, Charged-Off)
-- Top 10 Riskiest States (by Charged-Off Rate)
+## 🛠️ Tools & Technologies
+
+- **Power BI**
+- **DAX**
+- **Power Query**
+- **Data Modeling**
+- **Data Visualization**
+- **Financial & Risk Analysis**
 
 ---
 
-### **4. Tool Tip Pages**
-- Two customized tooltip pages that enhance user experience  
-by showing context-sensitive insights when hovering on visuals.
-
----
-
-## 🧠 Key Insights from the Dashboard
-
-- **Grade B & C loans** dominate portfolio volume but show increased risk compared to A-grade loans.  
-- States like **AK, NV, ND, and WY** show **higher charged-off rates**, marking them as risk-heavy regions.  
-- Customers with **10+ years employment** tend to receive **higher loan amounts**.  
-- Majority of customers have **annual income below $100K**, shaping the portfolio’s risk/ability to repay.  
-- **Homeownership (Rent vs Mortgage)** influences the average loan value and default likelihood.
-
----
-
-## 🛠️ Features & Techniques Used
-
-- Interactive **slicers** (Grade, Loan Purpose, Employment Length)
-- **Drill-through** and **tooltip navigation**
-- **Custom DAX Measures** for KPI calculations:
-  - Total Loan Applications  
-  - Average Interest Rate  
-  - Charged-Off Rate  
-  - High-Risk Grade Count  
-  - Average DTI  
-- **Geographic mapping** for high-risk state detection  
-- Visual storytelling with consistent theme & layout
-
----
-
-## 📁 Repository Structure
-
-PowerBI-Project/
-├── Final PBI Project.pbix
-├── README.md
-└── images/
-├── loan_overview.png
-
-yaml
-Copy code
-
-*(Upload your screenshots into `/images` to activate the preview section below.)*
-
----
-
-## 🖼️ Screenshots
-
-### **Loan Overview**
-![Loan Overview](images/loan_overview.png)
-
-
----
-
-## ▶ How to Use This Dashboard
-
-1. Install **Power BI Desktop**  
-   https://powerbi.microsoft.com/desktop  
-2. Download `Final PBI Project.pbix`  
-3. Open the file in Power BI Desktop  
-4. Explore filters, slicers, drill-through pages  
-5. Hover over visuals to view advanced tooltip insights  
-
----
-
-## 📌 Use Cases
-
-- Financial risk assessment  
-- Customer loan behavior modeling  
-- Credit policy presentation  
-- Portfolio performance tracking  
-- Capstone/College project  
-- Resume & portfolio showcase  
-
----
-
-## 📜 License
-This project is available for educational and portfolio use.
-
----
-
-## ✨ Author
-**Anaya**  
-GitHub: https://github.com/Anaya3104-pk  
-Power BI | SQL | Data Analytics  
-
----
-## 📊 Dashboard Preview
+## 📊 Dashboard Pages
 
 ### 1. Loan Overview
-![Loan Overview](screenshots/loan-overview.png)
+
+The Overview page provides a high-level view of the loan portfolio.
+
+**Key KPIs:**
+
+| Metric | Value |
+|---|---:|
+| Total Loan Applications | 39K |
+| Total Funded Amount | $435.8M |
+| Total Amount Received | $473.1M |
+| Average Interest Rate | 12.05% |
+| Average DTI | 13.33% |
+
+The page also analyzes:
+
+- Loan status by grade
+- Average interest rate by grade
+- Loan-level details
+- Monthly filtering
+
+---
 
 ### 2. Customer Insights
-![Customer Insights](screenshots/customer-insights.png)
+
+The Customer Insights page focuses on customer characteristics and loan behavior.
+
+**Key KPIs:**
+
+| Metric | Value |
+|---|---:|
+| Total Customers | 39K |
+| Average Annual Income | $69.645K |
+| Active Customers | 32K |
+
+The page includes analysis of:
+
+- Home ownership
+- Employment length
+- Average loan amount by employment length
+- Annual income distribution
+- Average loan amount by state
+
+---
 
 ### 3. Risk Analysis
+
+The Risk Analysis page focuses on identifying loan portfolio risk.
+
+**Key KPIs:**
+
+| Metric | Value |
+|---|---:|
+| Total Charged-Off Loans | 5K |
+| Average DTI | 13.3% |
+| Average Interest Rate | 12.0% |
+| Charged-Off Rate | 13.8% |
+| High-Risk Grade Count | 4K |
+
+The page analyzes:
+
+- Default rate by loan grade
+- Overall loan risk composition
+- Average DTI by loan status
+- Top 10 riskiest states
+- Charged-off loan patterns
+- Grade and loan-purpose filtering
+
+---
+
+## 🖼️ Dashboard Preview
+
+### Loan Overview
+
+![Loan Overview](screenshots/loan-overview.png)
+
+### Customer Insights
+
+![Customer Insights](screenshots/customer-insights.png)
+
+### Risk Analysis
+
 ![Risk Analysis](screenshots/risk-analysis.png)
 
-## ⭐ If you found this useful, give the repository a star!
+---
+
+## 🔍 Key Observations
+
+The dashboard provides visibility into several portfolio-level patterns, including:
+
+- Loan performance varies across different loan grades.
+- Interest rates differ by loan grade.
+- Charged-off rates can be compared across grades and geographic regions.
+- Customer income, employment length, and home ownership can be analyzed alongside loan characteristics.
+- DTI can be examined across different loan repayment statuses.
+
+---
+
+## 📁 Repository Contents
+
+```text
+powerbi-dashboard-project/
+│
+├── Images/
+├── screenshots/
+│   ├── loan-overview.png
+│   ├── customer-insights.png
+│   └── risk-analysis.png
+│
+├── Final PBI Project.pbix
+└── README.md
+
+## 🎯 Skills Demonstrated
+
+- Power BI
+- DAX
+- Power Query
+- Data Modeling
+- Data Visualization
+- KPI Development
+- Financial Analysis
+- Risk Analysis
+- Interactive Dashboard Design
+
+## 👩‍💻 Author
+
+**Anaya**  
+B.Tech Computer Science Engineering Student | Aspiring Data Analyst
+
+[GitHub](https://github.com/Anaya3104-pk)
